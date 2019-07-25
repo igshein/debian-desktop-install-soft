@@ -1,2 +1,4 @@
 # debian-desktop-install-soft
-Debian desktop - installation of software
+## Run script
+
+bash ddis.sh
