@@ -43,7 +43,6 @@ wget https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/megasync-Debian_10.0_amd64
 sudo dpkg -i megasync-Debian_10.0_amd64.deb
 rm megasync-Debian_10.0_amd64.deb
 
-
 ## Viber
 wget -O ~/viber.deb http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 sudo apt-mark hold libcurl4
