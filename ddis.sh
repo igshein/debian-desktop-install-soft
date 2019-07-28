@@ -9,6 +9,9 @@ sudo apt-get -y install konsole
 ## Telnet
 sudo apt-get -y install telnet
 
+## Git
+sudo apt-get -y install git
+
 ## Sublime
 sudo apt -y install apt-transport-https
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -34,6 +37,13 @@ rm slack-desktop-3.3.8-amd64.deb
 ## Telegram
 sudo apt-get -y install telegram-desktop
 
+## MegaSync
+## https://mega.nz/linux/MEGAsync/Debian_9.0/amd64/megasync-Debian_9.0_amd64.deb
+wget https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/megasync-Debian_10.0_amd64.deb
+sudo dpkg -i megasync-Debian_10.0_amd64.deb
+rm megasync-Debian_10.0_amd64.deb
+
+
 ## Viber
 wget -O ~/viber.deb http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
 sudo apt-mark hold libcurl4
@@ -45,8 +55,3 @@ sudo apt-get -y install libcurl3 ~/viber.deb
 ## Fixed depends after install Viber
 sudo apt -y --fix-broken install
 rm viber.deb
-
-## MegaSync
-wget https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/megasync-Debian_10.0_amd64.deb
-sudo dpkg -i megasync-Debian_10.0_amd64.deb
-rm megasync-Debian_10.0_amd64.deb
