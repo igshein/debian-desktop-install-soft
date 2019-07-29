@@ -3,22 +3,22 @@ sudo apt-get update
 ## Wget
 sudo apt-get -y install wget
 wget --version
-echo ''
+echo "\n\n"
 
 ## Konsole terminal
 sudo apt-get -y install konsole
 konsole --version
-echo ''
+echo "\n\n"
 
 ## Telnet
 sudo apt-get -y install telnet
 telnet --version
-echo ''
+echo "\n\n"
 
 ## Git
 sudo apt-get -y install git
 git --version
-echo ''
+echo "\n\n"
 
 ## Sublime
 sudo apt -y install apt-transport-https
@@ -27,21 +27,21 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install sublime-text
 sublime-text --version
-echo ''
+echo "\n\n"
 
 ## Google chrome
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt-get -y install ./google-chrome-stable_current_amd64.deb
 rm google-chrome-stable_current_amd64.deb
 google-chrome --version
-echo ''
+echo "\n\n"
 
 ## Skype
 wget https://go.skype.com/skypeforlinux-64.deb
 sudo apt-get -y install ./skypeforlinux-64.deb
 rm skypeforlinux-64.deb
 skype --version
-echo ''
+echo "\n\n"
 
 ## Docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
@@ -60,4 +60,4 @@ sudo setfacl -m $USER:$USER:rw /var/run/docker.sock
 sudo addgroup --system docker
 sudo adduser $USER docker
 docker-compose --version
-echo ''
+echo "\n\n"
