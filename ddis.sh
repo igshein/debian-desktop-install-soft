@@ -29,28 +29,31 @@ wget https://go.skype.com/skypeforlinux-64.deb
 sudo apt-get -y install ./skypeforlinux-64.deb
 rm skypeforlinux-64.deb
 
-## Slack
-wget https://downloads.slack-edge.com/linux_releases/slack-desktop-3.3.8-amd64.deb
-sudo apt-get -y install ./slack-desktop-*.deb
-rm slack-desktop-3.3.8-amd64.deb
 
-## Telegram
-sudo apt-get -y install telegram-desktop
+echo '____________________VERSION_WGET____________________'
+wget --version
+echo ''
 
-## MegaSync
-## https://mega.nz/linux/MEGAsync/Debian_9.0/amd64/megasync-Debian_9.0_amd64.deb
-wget https://mega.nz/linux/MEGAsync/Debian_10.0/amd64/megasync-Debian_10.0_amd64.deb
-sudo dpkg -i megasync-Debian_10.0_amd64.deb
-rm megasync-Debian_10.0_amd64.deb
+echo '____________________VERSION_KONSOLE____________________'
+konsole --version
+echo ''
 
-## Viber
-wget -O ~/viber.deb http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-sudo apt-mark hold libcurl4
-sudo dpkg -i --ignore-depends=libcurl3 ~/viber.deb
-sudo apt-get -y -f install
-sudo dpkg -i --ignore-depends=libcurl3 ~/viber.deb
-sudo apt-mark unhold libcurl4
-sudo apt-get -y install libcurl3 ~/viber.deb
-## Fixed depends after install Viber
-sudo apt -y --fix-broken install
-rm viber.deb
+echo '____________________VERSION_TELENET____________________'
+telnet --version
+echo ''
+
+echo '____________________VERSION_GIT____________________'
+git --version
+echo ''
+
+echo '____________________VERSION_SUBLIME_TEXT____________________'
+sublime-text --version
+echo ''
+
+echo '____________________VERSION_GOOGLE_CHROME____________________'
+google-chrome --version
+echo ''
+
+echo '____________________VERSION_SKYPE____________________'
+skype --version
+echo ''
