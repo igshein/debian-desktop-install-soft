@@ -36,13 +36,6 @@ rm google-chrome-stable_current_amd64.deb
 google-chrome --version
 echo "\n\n"
 
-## Skype
-wget https://go.skype.com/skypeforlinux-64.deb
-sudo apt-get -y install ./skypeforlinux-64.deb
-rm skypeforlinux-64.deb
-skype --version
-echo "\n\n"
-
 ## Docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
