@@ -20,6 +20,26 @@ sudo apt-get -y install git
 git --version
 echo "\n\n"
 
+## Google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt-get -y install ./google-chrome-stable_current_amd64.deb
+rm google-chrome-stable_current_amd64.deb
+google-chrome --version
+echo "\n\n"
+
+## Skype
+wget https://go.skype.com/skypeforlinux-64.deb
+sudo apt install ./skypeforlinux-64.deb
+rm skypeforlinux-64.deb
+
+## Viber
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl1.libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb
+sudo apt install ./libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb 
+wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
+sudo apt install ./viber.deb
+rm libssl1.0.0_1.0.2n-1ubuntu6.2_amd64.deb
+rm viber.deb
+
 ## Sublime
 sudo apt -y install apt-transport-https
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -27,13 +47,6 @@ echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sou
 sudo apt-get update
 sudo apt-get install sublime-text
 sublime-text --version
-echo "\n\n"
-
-## Google chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt-get -y install ./google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
-google-chrome --version
 echo "\n\n"
 
 ## Docker
