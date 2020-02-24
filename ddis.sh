@@ -21,11 +21,11 @@ git --version
 echo "\n\n"
 
 ## Google chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo apt-get -y install ./google-chrome-stable_current_amd64.deb
-rm google-chrome-stable_current_amd64.deb
-google-chrome --version
-echo "\n\n"
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# sudo apt-get -y install ./google-chrome-stable_current_amd64.deb
+# rm google-chrome-stable_current_amd64.deb
+# google-chrome --version
+# echo "\n\n"
 
 ## Skype
 wget https://go.skype.com/skypeforlinux-64.deb
