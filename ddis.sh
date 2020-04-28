@@ -49,6 +49,9 @@ sudo apt-get install sublime-text
 sublime-text --version
 echo "\n\n"
 
+## Pinta
+# sudo apt-get -y install pinta
+
 ## Docker
 sudo apt-get remove docker docker-engine docker.io containerd runc
 sudo apt-get -y install apt-transport-https ca-certificates curl gnupg2 software-properties-common
