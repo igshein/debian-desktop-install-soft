@@ -5,8 +5,8 @@ sudo apt-get -y install wget
 wget --version
 echo "\n\n"
 
-## Konsole terminal
-sudo apt-get -y install konsole
+## Xfce4 terminal
+sudo apt-get -y install xfce4-terminal
 konsole --version
 echo "\n\n"
 
