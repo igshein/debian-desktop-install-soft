@@ -50,6 +50,8 @@ sublime-text --version
 echo "\n\n"
 
 ## Pinta
+# sudo add-apt-repository -y ppa:pinta-maintainers/pinta-stable
+# sudo apt-get update
 # sudo apt-get -y install pinta
 
 ## Docker
